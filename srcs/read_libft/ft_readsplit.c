@@ -40,7 +40,6 @@ char	**ft_readsplit(char *s, char c, int dont_escape)
 	int		i;
 	int		in_esc;
 
-	(void)dont_escape;
 	t = ft_ntsarr_new();
 	current_line = ft_ntsarr_app(&t, ft_strnew(0));
 	last = last_nonblank(s);
