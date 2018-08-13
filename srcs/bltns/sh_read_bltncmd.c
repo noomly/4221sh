@@ -145,32 +145,3 @@ int		read_bltn(int ac, char **av)
 	free(new_av);
 	return (0);
 }
-
-/* int			manage_backslashes(char **line) */
-/* { */
-/* 	char	*tmp; */
-/* 	char	*new; */
-/* 	int		i; */
-/* 	int		nl_escaped; */
-
-/* 	new = NULL; */
-/* 	i = -1; */
-/* 	nl_escaped = 0; */
-/* 	while ((*line)[++i]) */
-/* 	{ */
-/* 		if ((*line)[i] == '\\' && (*line)[i + 1] && (*line)[i + 1] == '\\') */
-/* 			tmp = ft_strappc(new, (*line)[i++]); */
-/* 		if ((*line)[i] == '\\' && !(*line)[i + 1]) */
-/* 		{ */
-/* 			nl_escaped = 1; */
-/* 			break ; */
-/* 		} */
-/* 		else */
-/* 			tmp = ft_strappc(new, (*line)[i]); */
-/* 		free(new); */
-/* 		new = tmp; */
-/* 	} */
-/* 	ft_strdel(line); */
-/* 	*line = new; */
-/* 	return (nl_escaped); */
-/* } */
